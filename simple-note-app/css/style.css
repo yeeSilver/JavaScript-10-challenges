@@ -3,6 +3,10 @@ body{
   font-family: 'Jua', sans-serif;
   padding: 15px;
 }
+.hide{
+  display: none;
+}
+
 header{
   display: flex;
   justify-content: center;
