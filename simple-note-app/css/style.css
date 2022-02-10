@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+body{
+  font-family: 'Jua', sans-serif;
+  padding: 15px;
+}
+header{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+h1{
+ font-size: 32px;
+}
+
+/* textarea */
+form{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+form textarea{
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  font-size: 16px;
+  font-family: 'Jua', sans-serif;
+}
+.btn-add{
+  margin-left: 10px;
+  background-color: grey;
+  border: none;
+  cursor: pointer;
+}
+.abled{
+  background-color: gold;
+}
+/* note list */
+main .cont-note{
+  margin: 0 auto;  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; 
+  grid-gap : 20px;
+  padding: 10px;
+  background-color: green;
+}
+.cont-note .text{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: gold;
+}
+.cont-note .text div{
+  width: 80%;
+}
+.cont-note .text img{
+  cursor: pointer;
+}
+.cont-note .text img:hover{
+  background-color: rgb(155, 117, 21);
+}
