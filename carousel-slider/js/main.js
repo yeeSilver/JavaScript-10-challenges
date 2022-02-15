@@ -9,22 +9,27 @@ const slideWidth = 300;
 const slideMargin = 30;
 
 //slides 너비 계산
-slides.style.width = ((slideWidth + slideMargin)*slideCount - slideMargin) + 'px';
+
+slides.style.width = ((slideWidth + slideMargin)*slideCount) + 'px';
 console.log(slides.style.width)
 
 function moveSlide(idx){
   slides.style.transform = 'translateX('+ (-idx * 330 )+ 'px)';
   currentIdx = idx;
 }
+function endmoveSlixe(){
+  slides.style.transform = 'translateX(' + 30+'px)';
+}
 
 nextBtn.addEventListener('click', () => {
   if(currentIdx < slideCount -1){
     moveSlide(currentIdx + 1);
+    console.log(currentIdx)
     slides.style.transition = 'transform .4s ease';
-    
   }else{
     moveSlide(0);
     slides.style.transition = 'none';
+
   }
 });
 
@@ -33,7 +38,7 @@ preBtn.addEventListener('click', () => {
     moveSlide(currentIdx -1);
     slides.style.transition = 'transform .4s ease';
   }else{
-    moveSlide(0);
+    moveSlide(slideCount-currentIdx-1);
     slides.style.transition = 'none';
   }
 })
