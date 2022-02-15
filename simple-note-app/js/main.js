@@ -33,8 +33,9 @@ function print(){
      <div>
         ${note_val}
       </div>
-      <img src="../img/remove_circle_outline_black_24dp.svg" alt="" class="remove">
-     `
+      <p class="remove"> 삭제 </p>
+      `
+      // <img src="../img/remove.svg" class="remove">
      container.appendChild(div);
      ["remove"].forEach((cls) => {
        console.log(i)

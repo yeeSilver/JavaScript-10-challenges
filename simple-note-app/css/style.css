@@ -58,9 +58,14 @@ main .cont-note{
 .cont-note .text div{
   width: 80%;
 }
-.cont-note .text img{
+.cont-note .text p{
   cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: goldenrod;
 }
-.cont-note .text img:hover{
-  background-color: rgb(155, 117, 21);
+.cont-note .text p:hover{
+  background-color: green;
+  color: #fff;
+
 }
