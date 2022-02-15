@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap');
+body{
+  font-family: 'Jua', sans-serif;
+}
+h1{
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0;
+}
+.con_slide{
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.slides{
+  display: flex;
+}
+.slides li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: gold;
+  width: 300px;
+  height: 300px;
+  font-size: 30px;
+  line-height: 30px;
+}
+.slides li:not(:last-child){
+  margin-right: 30px;
+}
+
+.control{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.control button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.control button:active{
+  transform: scale(0.8);
+}
