@@ -57,3 +57,5 @@ function remove(key){
 //문제1 : 메모를 remove하고 새로운 메모를 작성할 때, 키 값이 겹쳐서 overwright된다. ( length + 1 로 들어가기 때문) -> date로 key를 잡아서 해결함!
 
 //문제2 : reload으로 하니 부자연스럽다. display none으로 해서 유저 경험이 증가했으면 좋겠다. 
+
+//해결방안 : json형태로 올리기
