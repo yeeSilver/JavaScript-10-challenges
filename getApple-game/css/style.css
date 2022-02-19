@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap');
+
+body{
+  font-family: 'Jua', sans-serif;
+}
+
+header h1{
+  text-align: center;
+  margin: 30px;
+  font-size: 22px;
+}
+
+button{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(247, 229, 128);
+  font-family: 'Jua', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: gold;
+  transform: scale(0.88);
+}
+
+/* main field */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_game{
+  width: 500px;
+  height: 500px;
+  background: url(../img/field.png) no-repeat center/cover;
+}
+.main_game .box_score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box_score button{
+  margin: 10px;
+}
+.box_score span{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(247, 229, 128);
+}
+
+.main_game .img_tree{
+  width: 500px;
+  height: 400px;
+  background: url(../img/tree.png)no-repeat center/contain;
+}
+.main_game .img_tree .img_treetop{
+  width: 500px;
+  height: 330px;
+  background: url(../img/tree_top.png)no-repeat center/cover;
+}
+
+/* modal */
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 300px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgba(51, 51, 51, 0.486);
+  transform: translateX(-50%) translateY(-50%);
+}
+.modal span{
+  color: #fff;
+  margin-top: 5px;
+}

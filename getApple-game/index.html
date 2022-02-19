@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>get the RED apple!</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🍎빨간 사과를 따세요 🍏초록 사과는 ❌</h1>
+  </header>
+
+  <main>
+    <section class="main_game">
+      <header class="box_score">
+        <button>시작</button>
+        <div>
+          <span class="time">0:0</span>
+          <span class="score">🍎5 🍏1</span>
+        </div>
+      </header>
+      <div class="img_tree">
+        <div class="img_treetop"></div>
+      </div>
+    </section>
+
+    <section class="modal ir">
+        <button class="back">다시하기</button>
+        <span class="result">All Clear🎉  </span>
+        <span class="comment">당신은 농사 천재 이시군요!</span>
+    </section>
+  </main>
+  <script src="./js/main.js" defer></script>
+  <!-- defer를 쓰지 않으면 스크립트가 html 이전에 실행됨. defer대신 window.onload로 초기화 함수 실행해줄 수 있음 -->
+</body>
+</html>
