@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal</title>
+  <style>
+    body{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    button{
+      all: unset;
+      background-color: gold;
+      color: green;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover{
+      transform: scale(1.2);
+    }
+
+    .modal{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal_overlay{
+      position: absolute;
+      background-color: rgba(51, 51, 51, 0.555);
+      width: 100%;
+      height: 100%;
+    }
+    .modal_content{
+      position: relative;
+      width: 30%;
+      padding: 50px 100px;
+      border-radius: 5px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    h1{
+      margin: 0;
+    }
+
+    .hidden{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button class="open">click modal</button>
+  <div class="modal hidden">
+    <div class="modal_overlay"></div>  <!-- 모달 배경창 -->
+    <div class="modal_content">
+      <h1>this is modal</h1>
+      <button>❌</button>
+    </div>
+  </div>
+
+  <script>
+    const openBtn = document.querySelector('.open');
+    const modal = document.querySelector('.modal');
+    const overlay = modal.querySelector('.modal_overlay');
+    const closeBtn = modal.querySelector('button');
+    const openModal = () => {
+      modal.classList.remove('hidden');
+    }
+    const closeModal = () => {
+      modal.classList.add('hidden');
+    }
+    openBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', closeModal);
+  </script>
+</body>
+</html>
