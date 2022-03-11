@@ -1,0 +1,21 @@
+body{
+  margin:0;
+}
+div{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: whitesmoke;
+}
+p{
+  font-size: 36px;
+}
+.tomato{
+  color: tomato;
+}
+.gold{
+  color: gold;
+}
