@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <style>
+      body{
+        background-color: green;
+        color: #333;
+        text-align: center;
+      }
+      h1{
+        color: gold;
+      }
+      .container{
+        padding: 20px;
+        margin: 0 20%;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        box-shadow:inset 0 0 5px #333;
+      }
+      #btn{
+        cursor: pointer;
+      }
+      .hide{
+        display: none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Random Number Game</h1>
+    <div class="container">
+      <span>Generate a number between 0 and </span><input type="number" id="limitNum"><br>
+      <span>Guess the number </span><input type="number" id="guess">
+      <button id="btn">play</button>
+
+      <div class="con-result hide">
+        <span>You chose: </span><span id="guessNum"></span>
+        <span>, the machine chose: </span><span id="machine"></span>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
