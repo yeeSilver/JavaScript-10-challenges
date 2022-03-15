@@ -12,7 +12,7 @@ const quotes = [
     author: "I go by the name CL of 2NE1"
   },
   {
-    quote: "You know me better than I do",
+    quote: "Permeate my ego and my pride",
     author: "Ari"
   },
   {
