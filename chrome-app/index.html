@@ -9,7 +9,7 @@
   <title>Let's write Today's List</title>
 </head>
 <body>
-
+  <h1 class="hidden">momentum</h1>
   <main>
     <!-- form submit을 하면 새로고침은 자동으로 발생함 -->
     <form class="hidden" id="con-login">
@@ -17,25 +17,30 @@
       <input type="submit" value="LogIn"></input>
     </form>
     
-    <div id="clock"></div>
-    <h1 id="greeting" class="hidden"></h1>
-
-    <!-- todolist -->
-    <form id="con-todo">
-      <input type="text" placeholder="write To Do list!">
-    </form>
-    <ul id="li-todo"></ul>
-
-    <article>
-      <div id="quote">
+    <section id="header">
+      <p id="greeting" class="hidden"></p>
+      <div id="clock"></div>
+      <article id="weather">
         <span></span>
         <span></span>
-      </div>
-    </artic>
-    <article id="weather">
-      <span></span>
-      <span></span>
-    </article>
+      </article>
+    </section>
+
+    <section id="container">
+      <article>
+        <img class="musicImg">
+        <p class="artist"></p>
+        <p class="lyric"></p>
+      </article>
+      <!-- todolist -->
+      <article>
+        <form id="con-todo">
+          <input type="text" placeholder="What are your plans for today?">
+        </form>
+        <ul id="li-todo"></ul>
+      </article>
+    </section>
+
   </main>
 
   <script src="./src/js/greetings.js"></script>
